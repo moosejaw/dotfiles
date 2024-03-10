@@ -1,0 +1,22 @@
+[shell]
+program = "/opt/homebrew/bin/tmux"
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+
+[font]
+normal = { family = "Monaco", style = "Regular" }
+size = 14
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
+
+[window]
+blur = true
+decorations = "buttonless"
+padding = { x = 25, y = 25 }
+title = "terminal"
+
