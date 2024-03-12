@@ -21,6 +21,7 @@ AWS_SSO_SESSION="session"
 alias awslogin="aws sso login --sso-session $AWS_SSO_SESSION"
 alias d=docker
 alias fzf="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+alias g=git
 alias k=kubectl
 alias mk="minikube kubectl --"
 alias t=terraform
