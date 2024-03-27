@@ -44,4 +44,15 @@ kuse() {
 uuid() { python -c 'import uuid; print(uuid.uuid4(), end="")' | pbcopy; }
 # `dt` generates an ISO format datetime string and copies it to the clipboard.
 dt() { python -c 'import datetime; print(str(datetime.datetime.now()), end="")' | pbcopy; }
+# `gprune` removes git branches that are not 'main'.
+gprune() {
+  for branch in $(g b --no-format | cut -c3-)
+  do
+    echo $branch
+    if [ "$branch" != "main" ]
+    then
+      g b -D $branch
+    fi
+  done
+}
 
